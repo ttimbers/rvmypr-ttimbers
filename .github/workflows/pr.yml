@@ -16,7 +16,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Report most accomplished pilots
           title: Report most accomplished pilots
           body: Code writtent to calculate top 5 accomplished pilots, and a image showing the top pilot."
